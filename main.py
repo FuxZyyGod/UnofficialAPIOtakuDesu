@@ -37,6 +37,3 @@ def searchAnime(keyword):
         "status": "OK",
         "data": SearchAnimeDat(keyword),
     })
-
-if __name__ == '__main__':
- api.run(debug=True, host="0.0.0.0")
