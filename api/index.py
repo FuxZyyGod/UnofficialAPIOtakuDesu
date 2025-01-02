@@ -40,5 +40,5 @@ def searchAnime(keyword):
         "data": SearchAnimeDat(keyword),
     }
  
-if __name__ == '__main__':
- api.run(debug=True)
+# if __name__ == '__main__':
+#  api.run(debug=True)
