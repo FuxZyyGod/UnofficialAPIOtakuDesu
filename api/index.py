@@ -33,6 +33,9 @@ def subTitleAnime(sub_title):
         "data": SubtitleAnimeDat(sub_title),
     })
 
+if __name__ == '__main__':
+ api.run(debug=True)
+
 @api.route("/api/v1/anime-search/<string:keyword>")
 def searchAnime(keyword):
     return jsonify({
