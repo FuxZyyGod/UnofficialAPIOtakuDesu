@@ -39,4 +39,4 @@ def searchAnime(keyword):
     })
 
 if __name__ == '__main__':
- api.run()
+ api.run(debug=True)
