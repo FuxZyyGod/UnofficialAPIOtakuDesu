@@ -1,10 +1,12 @@
 from flask import Flask, jsonify, render_template
+from flask_cors import CORS
 from s.ongoingHandler import OngoingAnimeDat
 from s.completeHandler import CompleteAnimeDat
 from s.subtitleHandler import SubtitleAnimeDat
 from s.searchHandler import SearchAnimeDat
 
 api = Flask(__name__)
+CORS(api)
 
 @api.route("/")
 def index():
