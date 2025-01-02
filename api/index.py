@@ -10,7 +10,7 @@ CORS(api)
 
 @api.route("/")
 def index():
- return render_template("index.html")
+ return "<h1>ENDPOINTS</h1>"
  
 @api.route("/api/v1/ongoing-anime/page/<int:page>")
 def ongoingAnime(page):
